@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client';
 export class PrismaService extends PrismaClient {
   constructor() {
     super({
-      datasource: {
+      datasources: {
         db: {
           url: 'postgresql://postgres:15204008@localhost:5434/nest?schema=public',
         },
